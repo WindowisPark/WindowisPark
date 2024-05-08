@@ -3,12 +3,14 @@
     <img src="https://github.com/WindowisPark/image/blob/main/mylogo.png?raw=true" width="200">
 </div>
 
-
-## 관심사
-- 🌐 웹 개발
-- 📱 모바일 애플리케이션 개발
-- 🖥️ 서버 및 클라우드 개발 (희망)
-
+<div align=center>
+<h1>## 관심사</h1>
+<p>
+    - 🌐 웹 개발
+    - 📱 모바일 애플리케이션 개발
+    - 🖥️ 서버 및 클라우드 개발
+</p>
+</div>
 <div align=center><h1>📚 STACKS</h1></div>
 
 <div align=center> 
