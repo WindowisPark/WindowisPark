@@ -2,6 +2,7 @@
 <div align="center">
     <img src="https://github.com/WindowisPark/image/blob/main/mylogo.png?raw=true" width="200">
 </div>
+<hr>
 
 <div align=center>
 <h1>## 관심사</h1>
