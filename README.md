@@ -27,16 +27,13 @@
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white)
 
-**Mobile**
+**Mobile & Infra**
 
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
-![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
-
-**Infra & Tools**
-
 ![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 
 </div>
 
@@ -59,14 +56,91 @@
 
 ## 🚀 Projects
 
-| Project | Description | Tech |
-|---------|-------------|------|
-| [SpotPrice](https://github.com/WindowisPark/SpotPrice) | 고트래픽 역경매 백엔드 — DDD 아키텍처 | `Java 21` `Spring Boot` `Redis` |
-| [lock-bench](https://github.com/WindowisPark/lock-bench) | 동시성 제어 전략 비교 실험 | `Optimistic` `Pessimistic` `Redis Lock` |
-| [rag-agent](https://github.com/WindowisPark/rag-agent) | 한국 법률 MCQ RAG Agent System | `Python` `FastAPI` `GPT-4o-mini` |
-| [dividend1s](https://github.com/WindowisPark/dividend1s) | 1초 부동산 배당 계산기 | `등기부등본 파싱` `수익률 분석` |
-| [devprep](https://github.com/WindowisPark/devprep) | 개발자 면접 준비 데일리 퀴즈 | `학습 트래커` |
-| [e-room](https://github.com/WindowisPark/e-room) | 창의학기제 풀스택 프로젝트 | `Vue` `Flutter` `FastAPI` |
+> 더 자세한 내용은 [Portfolio](https://windowispark.github.io/)에서 확인하실 수 있습니다.
+
+<details>
+<summary><b>🏢 라이프캐치 DMX 포인트 개발</b> — 그린리본 · 팀</summary>
+<br/>
+
+> 환전 API 동시성 오류율 90%+ 감소 — 트랜잭션 재설계 + idempotency key
+
+`Java` `Spring Boot` `JPA` `MySQL`
+
+**핵심 성과:** JMeter 동시 100건 재현 테스트로 수정 전·후 정량 비교, 환전 오류율 90% 이상 감소 확인
+
+</details>
+
+<details>
+<summary><b>🔬 hub.green-scout</b> — 그린리본 · 팀 | <a href="https://hub.green-scout.co.kr/">Demo</a></summary>
+<br/>
+
+> Databricks 비동기 분석 + RBAC 5단계 보안 체계 — 실제 운영 배포
+
+`Java 21` `Spring Boot 3` `JPA` `MySQL` `Databricks` `Flyway` `Spring Security`
+
+**핵심 성과:** 임상시험 Feasibility 분석 플랫폼 백엔드 전체 설계·개발, 운영 환경 배포 완료
+
+</details>
+
+<details>
+<summary><b>⚡ SpotPrice</b> — 개인 프로젝트 | <a href="https://github.com/WindowisPark/SpotPrice">GitHub</a></summary>
+<br/>
+
+> 역경매 가격 함수 설계 + 분산락으로 동시 결제 충돌 방지
+
+`Java 21` `Spring Boot 3.5` `JPA` `MySQL` `Hexagonal Architecture`
+
+**핵심 성과:** LINEAR 가격 함수 직접 설계, 분산락 + 조건부 UPDATE로 동시 결제 승자 1명 보장
+
+</details>
+
+<details>
+<summary><b>🔒 LockBench</b> — 개인 프로젝트 | <a href="https://github.com/WindowisPark/lock-bench">GitHub</a></summary>
+<br/>
+
+> 락 전략 4종 × 스레드 2종 TPS 자동 측정 — Redis 분산락 한계 정량 검증
+
+`Java 21` `Spring Boot 3` `MySQL` `Redis` `Prometheus` `Grafana`
+
+**핵심 성과:** PESSIMISTIC_LOCK 20,864 req/s 최고, Redis 분산락 468 req/s로 고빈도 시나리오 부적합 검증
+
+</details>
+
+<details>
+<summary><b>📚 Planova (e-room)</b> — 세종대 창의학기제 · 팀 | <a href="https://github.com/WindowisPark/e-room">GitHub</a></summary>
+<br/>
+
+> AI 튜터 + 학습 플랫폼 — 실운영 후 보안 TDD·AI 고도화 V2 리팩토링
+
+`Python` `FastAPI` `PostgreSQL` `Redis` `WebSocket` `Vue 3` `LangGraph` `Gemini`
+
+**핵심 성과:** 약 1개월 실서비스 운영, V2에서 CVE 3건 패치 + JWT 보안 TDD + Gemini 전환
+
+</details>
+
+<details>
+<summary><b>🏥 FitIn</b> — 캡스톤 산학협력 · 팀 | <a href="https://github.com/WindowisPark/fitin">GitHub</a></summary>
+<br/>
+
+> CV 관절 각도 분석 + WebSocket 실시간 재활 모니터링
+
+`Java 21` `Spring Boot 3` `MySQL` `Redis` `WebSocket` `Arduino` `Computer Vision`
+
+**핵심 성과:** 6개 부위별 자세 채점(총점 89점·정확도 85%), 의료진 원격 실시간 모니터링
+
+</details>
+
+<details>
+<summary><b>🏠 배당1초</b> — 개인 프로젝트 | <a href="https://github.com/WindowisPark/dividend1s">GitHub</a></summary>
+<br/>
+
+> 등기부등본 PDF 업로드 → NPL 배당금 1초 자동 계산
+
+`Java` `Spring Boot` `Python` `TypeScript` `PostgreSQL` `Docker`
+
+**핵심 성과:** PDF 파싱(Python) + 배당 계산(Java) 폴리글랏 멀티 모듈, Docker 통합 환경
+
+</details>
 
 ---
 
