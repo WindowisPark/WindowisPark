@@ -12,6 +12,7 @@ SK텔레콤에서 AI 서비스 품질 운영을 맡고 있는 백엔드 개발�
 매일 경기를 예측하고, 다음 날 실제 결과와 맞춰 보는 [야구 예측 파이프라인](https://windowispark.github.io/#case-baseball)의 실행 기록입니다.
 
 <!-- pipelines starts -->
+- 지금은 표시할 실행 기록이 없습니다
 <!-- pipelines ends -->
 
 </td>
@@ -20,6 +21,11 @@ SK텔레콤에서 AI 서비스 품질 운영을 맡고 있는 백엔드 개발�
 ### Dev Log
 
 <!-- devlog starts -->
+- [리포트를 세로 리더로 — 읽기 경험 세 번째 재설계](https://windowispark.github.io/commit-blog/blog/2026-08-21-saju-mbti-report-vertical-reader/) · 2026-08-21
+- [오미쿠지 연출과 완주 보상 — 세계 탐험 폴리싱](https://windowispark.github.io/commit-blog/blog/2026-08-21-saju-mbti-report-omikuji-and-rewards/) · 2026-08-21
+- [프롬프트가 시키는 걸 게이트가 처벌했다 — 생성 재설계 3부작](https://windowispark.github.io/commit-blog/blog/2026-08-21-saju-mbti-report-generation-redesign/) · 2026-08-21
+
+[전체 131편 보기](https://windowispark.github.io/commit-blog/)
 <!-- devlog ends -->
 
 </td>
@@ -32,5 +38,5 @@ SK텔레콤에서 AI 서비스 품질 운영을 맡고 있는 백엔드 개발�
 [야구 경기 예측·검증 자동화](https://windowispark.github.io/#case-baseball) ·
 [사주마을](https://windowispark.github.io/#case-sajuvillage)
 
-<sub>위 두 칸은 GitHub Actions가 매일 아침 다시 씁니다. 마지막 갱신 <!-- updated starts --><!-- updated ends --> · [동작 방식](build_readme.py)</sub>
+<sub>위 두 칸은 GitHub Actions가 매일 아침 다시 씁니다. 마지막 갱신 <!-- updated starts -->2026-10-31 10:56 KST<!-- updated ends --> · [동작 방식](build_readme.py)</sub>
 [![Build README](https://github.com/WindowisPark/WindowisPark/actions/workflows/build.yml/badge.svg)](https://github.com/WindowisPark/WindowisPark/actions/workflows/build.yml)
