@@ -86,7 +86,9 @@ def pipeline_line(repo, name, predictions_path, key):
 
 def devlog_lines(count=3):
     posts = api(f"repos/{OWNER}/commit-blog/contents/src/content/blog")
-    posts = sorted((p for p in posts if p["name"].endswith(".md")), key=lambda p: p["name"], reverse=True)
+    # newsroom-ai 글은 사이트 빌드에서 빠지므로(commit-blog의 content.config.ts) 여기서도 세지 않는다
+    posts = [p for p in posts if p["name"].endswith(".md") and "-newsroom-ai-" not in p["name"]]
+    posts = sorted(posts, key=lambda p: p["name"], reverse=True)
     lines = []
     for post in posts[:count]:
         text = api(f"repos/{OWNER}/commit-blog/contents/{post['path']}", raw=True)
