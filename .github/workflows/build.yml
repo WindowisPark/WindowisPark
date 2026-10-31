@@ -1,0 +1,36 @@
+name: Build README
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    # 10:23 KST. MLB 아침 실행(09시대)이 끝난 뒤에 돈다
+    - cron: "23 1 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # README_TOKEN이 없으면 기본 토큰으로 돌고, 비공개 저장소 줄은 건너뛴다
+      - name: Rewrite README
+        run: python build_readme.py
+        env:
+          GH_TOKEN: ${{ secrets.README_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - name: Commit if changed
+        run: |
+          git diff --quiet && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "README 자동 갱신"
+          git push
