@@ -12,7 +12,7 @@ SK텔레콤에서 AI 서비스 품질 운영을 맡고 있는 백엔드 개발�
 매일 경기를 예측하고, 다음 날 실제 결과와 맞춰 보는 [야구 예측 파이프라인](https://windowispark.github.io/#case-baseball)의 실행 기록입니다.
 
 <!-- pipelines starts -->
-- **MLB** · 11-11 15:25 성공 · 최근 30일 363회 중 360회 성공 · 예측한 경기 819
+- **MLB** · 11-12 15:25 성공 · 최근 30일 363회 중 360회 성공 · 예측한 경기 819
 - **KBO** · 비시즌 중지 · 예측한 경기 232
 - **NPB** · 비시즌 중지 · 예측한 경기 261
 <!-- pipelines ends -->
@@ -40,5 +40,5 @@ SK텔레콤에서 AI 서비스 품질 운영을 맡고 있는 백엔드 개발�
 [야구 경기 예측·검증 자동화](https://windowispark.github.io/#case-baseball) ·
 [사주마을](https://windowispark.github.io/#case-sajuvillage)
 
-<sub>위 두 칸은 GitHub Actions가 매일 아침 다시 씁니다. 마지막 갱신 <!-- updated starts -->2026-11-11 16:50 KST<!-- updated ends --> · [동작 방식](build_readme.py)</sub>
+<sub>위 두 칸은 GitHub Actions가 매일 아침 다시 씁니다. 마지막 갱신 <!-- updated starts -->2026-11-12 17:27 KST<!-- updated ends --> · [동작 방식](build_readme.py)</sub>
 [![Build README](https://github.com/WindowisPark/WindowisPark/actions/workflows/build.yml/badge.svg)](https://github.com/WindowisPark/WindowisPark/actions/workflows/build.yml)
